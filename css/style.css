@@ -1,0 +1,107 @@
+/* --- Estilos Generales --- */
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Fuente más moderna */
+  background-color: #f8f9fa; /* Color de fondo suave */
+  color: #343a40; /* Color de texto principal */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #343a40;
+}
+
+/* --- Estilos para las Tarjetas de Productos (Index) --- */
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra más pronunciada */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición también para la sombra */
+  border: none; /* Eliminar borde predeterminado de Bootstrap */
+  border-radius: 10px; /* Bordes más redondeados */
+  overflow: hidden; /* Asegura que la imagen no sobresalga de los bordes redondeados */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Pequeño levantamiento al pasar el mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más intensa al pasar el mouse */
+}
+
+.card-img-top {
+  height: 200px; /* Altura fija para las imágenes de las tarjetas */
+  object-fit: cover; /* Recorta la imagen para que cubra el área sin distorsionar */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 1.25rem; /* Aumento de padding */
+}
+
+.card-title {
+  height: 3rem; /* Altura fija para el título para alinear mejor los elementos */
+  overflow: hidden; /* Esconde el texto que se desborda */
+  text-overflow: ellipsis; /* Añade puntos suspensivos */
+  white-space: nowrap; /* Evita que el texto salte de línea */
+}
+
+.card-text {
+  font-size: 1.25rem; /* Tamaño de fuente para el precio */
+  margin-bottom: 1rem;
+  color: #007bff; /* Color azul para el precio */
+}
+
+/* --- Estilos para el Formulario de Pago --- */
+.formulario-pago-container {
+  background: #ffffff;
+  max-width: 600px; /* Aumentado el ancho máximo para más espacio */
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px; /* Bordes más redondeados */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.formulario-pago-container h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #343a40;
+}
+
+.formulario-pago .form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.formulario-pago .form-control {
+  border-radius: 8px; /* Bordes redondeados para inputs */
+  padding: 0.75rem 1rem; /* Aumento de padding para inputs */
+  font-size: 1rem;
+}
+
+.formulario-pago .form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.formulario-pago .btn {
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* --- Responsive Images (general) --- */
+/* Esta regla ya estaba, pero la mantengo como buena práctica */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para ocultar elementos a lectores de pantalla (accesibilidad) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
