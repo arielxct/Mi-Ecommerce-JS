@@ -105,3 +105,11 @@ img {
   clip: rect(0,0,0,0);
   border: 0;
 }
+.custom-hover-link {
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transición suave */
+}
+
+.custom-hover-link:hover {
+    color: rgb(226, 9, 74) !important; /* Tu color deseado al pasar el mouse */
+    text-decoration: underline !important; /* Opcional: subrayado */
+}
